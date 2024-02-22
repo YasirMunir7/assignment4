@@ -1,0 +1,666 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tropiko</title>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* border: 2px solid black; */
+}
+.backgroundcolor{
+
+    background-color: rgb(134, 232, 172);
+    
+}
+.tropiko-size{
+    /* font-size: xx-large; */
+    font-family: sans-serif;    
+    /* color: rgb(0, 255, 72); */
+}
+.logo-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1.5% 4%;
+}
+.nav-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5% 0 0;
+}
+.bar-flex{
+    display: flex;
+    /* border: 2px solid green; */
+}
+.button, .a {
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(55, 52, 52) ;
+    background-color: transparent;
+    margin-left: 30px;
+    border: none;
+}
+#get-a-quote{
+    /* margin-left: 30px; */
+    border: none;
+    font-size: large;
+    font-weight: 800;
+    color: white;
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+}
+#get-a-quotea{
+    margin-left: 30px;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50% -50%);
+    width: 180px;
+    height: 60px;
+    color: white;
+    background-color: rgb(244, 106, 67);
+    border: none;
+}
+#simg{
+    /* border: 2px solid red; */
+    height: 25px;
+    width: 25px;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 1.5%;
+    /* margin-right: o; */
+    border: none;
+}
+.body-flex{
+    display: flex;
+    align-items: center;
+}
+.width{
+    width: 50%;
+    margin-left: 4%;
+}
+.bheading{
+    margin-top: 5%;   
+    font-size: 80px;
+    font-weight:900;
+    width: 82%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+p{
+    margin-top: 5%;
+    font-size: xx-large;
+    width: 90%;
+    font-family: sans-serif;
+}
+.button-flex{
+    display: flex;
+    gap: 20px;
+    border: none;
+    margin: 8% 0;
+}
+.buttons{
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(247, 96, 53);
+    width: 200px;
+    height: 50px;
+    font-size: x-large;
+    font-weight: 700;
+    border: none;
+}
+.buttona{
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 200px;
+    height: 50px;
+    font-size: x-large;
+    font-weight: 700;
+    text-decoration: none;
+    border: none;
+}
+button:hover{
+    transform: scale(1.1);
+}
+img:hover{
+    transform: scale(1.1);
+}
+#rimg{  
+    border-radius: 180px;
+}
+
+/* Second Page */
+.second-page-whole{
+    /* border: 2px solid green; */
+    margin: 40px 50px 0px 20px ;
+    /* background-color: brown; */
+}
+.lines{
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.services{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:900;
+    font-size: 50px;
+}
+.services-line{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+}
+.Shadow-img{
+    display: flex;
+    gap: 40px;
+    margin: 40px;
+    /* height: 600px; */
+}
+.shadow-bordere{
+    border: outset;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+.shadow-bordere:hover{
+    transform: scale(1.1);
+}
+.imgf{
+    margin-top: 15%;
+}
+.f-color{
+    color: rgb(247, 96, 53) ;
+    margin-top: 8%;
+    font-size: xx-large;
+    font-weight: lighter;
+}
+.loremp{
+    margin-top: 5%;
+    margin-bottom: 15%;
+}
+
+/* 3rd page starts here */
+
+.third-page-div{
+    /* background-color: rgb(240, 240, 240); */
+    margin: 80px 70px 0px 20px ;
+    /* border: 2px solid red; */
+}
+#lines{
+    margin-top: 2%;
+}
+.third-body{
+    margin-top: 4%;
+    /* margin-left: 4%; */
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.Best-orange-juice{
+    /* border: 2px solid magenta; */
+    margin-left: 4%;
+    margin-right: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Best-orange-juice-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 75%;
+}
+
+.headh{
+    font-weight: 500;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    width: min-content;
+    /* border: 2px solid blue; */
+}
+.margin-p{
+    margin: -10px 0 30px  0 ;
+    /* border: 2px solid pink; */
+}
+.headp{
+    font-size: x-large;
+    font-weight: 500;
+    margin: 20px 0 40px  0 ;
+    /* border: 2px solid pink; */
+}
+#grapes-margin{
+    margin-left:-78%;
+}
+
+
+/* 4th page styling starts here */
+.fourth-page-div{
+    margin: 80px 70px 0 20px ;
+}
+.lines-4{
+    margin-bottom: 50px;
+    justify-content: center;
+}
+#lines-4{
+    margin-top: 2%;
+}
+.johnhex{
+    font-size: 30px;
+    font-weight: lighter;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.p-margin{
+    font-size: large;
+    margin-top: 2%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Contact us page starts here */
+.contact-us-div{
+    margin: 120px 0px 0px 20px ;
+}
+.contact-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-gap{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4%;
+    gap: 30px;
+    width: 50%;
+}
+.contact-line{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:bolder;
+    font-size: 30px;
+}
+#input-size{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    height: 40px;
+    font-size: large;
+}
+.input-message-size{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    height: 40px;
+    font-size: large;
+    text-transform: capitalize;
+}
+.message-margin{
+    margin-top: 3%;
+}
+.send-button-margin{
+    margin-top: 4%;
+}
+.send-button{
+    /* color: white; */
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(247, 96, 53);
+    width: 100px;
+    height: 30px;
+    font-size: large;
+    font-weight: 700;
+    /* text-decoration: none; */
+    border: none;
+}
+#send-button{
+    text-decoration: none;
+    color: white;
+}
+#orange-dish{
+    height: 400px;
+}
+
+
+/* Description div starts here */
+
+.description-div{
+    margin: 90px 0px 60px 0px ;
+}
+.inside-margin{
+    margin:0 20px 20px 20px ;
+}
+.all-desc{
+    display: flex;
+    flex-direction: row;
+    /* width: 75%; */
+    gap: 30px;
+    margin: 0 90px 0px 70px;
+}
+.headf{
+    font-weight: 500;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    width: min-content;
+    /* border: 2px solid blue; */
+}
+.fruits-dec{
+    width: 50%;
+}
+.desc-p{
+    width: 44%;
+    height: 80%;
+    font-size: large;
+    font-weight: lighter;
+}
+.img-desc{
+    display: flex;
+    gap: 10px;
+    margin:20px 0;
+}
+.png-size{
+    height: 30px;
+    width: 30px;
+}
+#subscribe-input{
+    border: 2px solid black;
+    width: 80%;
+    height: 30px;
+}
+.submargin{
+    margin-top: 5%;
+}
+.send-button1{
+    /* color: white; */
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(247, 96, 53);
+    width: 150px;
+    height: 40px;
+    font-size: x-large;
+    font-weight: 700;
+    /* text-decoration: none; */
+    border: none;
+}
+#send-button1{
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    background-color: rgb(240, 240, 240);
+    height: 60px;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright-line{
+    display: flex;
+    font-size: x-large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* border: 2px solid green; */
+    /* justify-content: center;
+    background-color: rgb(240, 260, 230); */
+}
+    </style>
+</head>
+<body>
+    <div class="backgroundcolor">
+        <div class="nav-flex" >
+            <div class="logo-name" >
+                <img src="logo.png" alt="">
+                <h1 class="tropiko-size">Tropiko</h1>
+            </div>
+            <div class="bar-flex" >
+                <button class="button"><a class="a" href="">Home</a></button>
+                <button class="button"><a class="a" href="">Fruits</a></button>
+                <button class="button"><a class="a" href="">Services</a></button>
+                <button class="button"><a class="a" href="">Contact us</a></button>
+                <img id="simg" src="search-icon.png" alt="">
+                <button id="get-a-quotea" ><a id="get-a-quote" href="">GET A QUOTE</a></button>
+            </div>
+        </div>
+
+
+        <!-- Body Area -->
+        <div class="body-flex" >
+            <div class="width">
+                <div class="bheading" >
+                    <span>Welcome to Our Fruits Shop</span>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Surame Dolorem nulla fuga ex cum error optio sit quo quis  xurrerum utdicta neque inventore sequi ratione accusamus.</p>
+                </div>
+                <div class="button-flex">
+                    <div>
+                        <button class="buttons">SHOP NOW</button>
+                    </div>
+                    <div>
+                        <button class="buttona" ><a  class="buttona" href="">CONTACT US</a></button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img id="rimg" src="slide-img.png" alt="">
+            </div>
+        </div>    
+    </div>
+    <!-- <img src="ass04.png" alt=""> -->
+    
+
+    <!-- SECOND page starts here  -->
+
+
+
+    <div class="second-page-whole">
+        <div class="lines" >
+            <center>
+                <div>
+                    <span class="services">Our Services</span>
+                </div>
+                <div></div>
+                <span class="services-line" >There are many variations of passages of lorem ipsum available, but the majority have</span>
+            </center>
+        </div>
+    
+        <!-- Shadow image + flex -->
+    
+        <div class="Shadow-img" >
+            <div class="shadow-bordere">
+                <center>
+                    <img class="imgf" src="card-item-1.png" alt="">
+                    <h3 class="f-color" >Orange</h3>
+                    <p class="loremp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet maxime voluptate atque velit dolorum repellendus ut, quidem iste praesentium!</p>
+                </center>
+            </div>
+            <div class="shadow-bordere">
+                <center>
+                    <img class="imgf" src="card-item-2.png" alt="">
+                    <h3 class="f-color" >Grapes</h3>
+                    <p class="loremp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet maxime voluptate atque velit dolorum repellendus ut, quidem iste praesentium!</div>
+            <div class="shadow-bordere">
+                <center>
+                    <img class="imgf" src="card-item-3.png" alt="">
+                    <h3 class="f-color" >Gauva</h3>
+                    <p class="loremp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet maxime voluptate atque velit dolorum repellendus ut, quidem iste praesentium!</p>
+                </center>
+            </div>
+        </div>
+        <center>
+            <div>
+                <button class="buttona" ><a  class="buttona" href="">Read More</a></button>
+            </div>    
+        </center>
+    </div>
+
+    <!-- 3rd Page assignment starts here -->
+    <div class="third-page-div">
+        <div class="lines" id="lines" >
+            <center>
+                <div>
+                    <span class="services">Fresh Fruits</span>
+                </div>
+                <div></div>
+                <span class="services-line" >There are many variations of passages of lorem ipsum available, but the majority have</span>
+            </center>
+        </div>
+        <div>
+            <div class="third-body">
+                <div class="Best-orange-juice">
+                    <div class="Best-orange-juice-flex" >
+                        <div class="margin-h"><span class="headh">Best Fresh Orange</span></div>
+                        <p class="headp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tempora ut facere laudantium, doloremque atque repellat reiciendis temporibus nam delectus ducimus voluptas dolorem, nihil aut eos Repellat quam iste dignissimos doloremque atque Ad</p>
+                        <div><button class="buttona" ><a  class="buttona" href="">Buy Now</a></button></div>    
+                    </div>
+                    <div>
+                        <img class="img-s" src="orange.png" alt="">
+                    </div> 
+                </div>
+
+                <!-- Grapes div starts here -->
+
+                <div class="Best-orange-juice">
+                    <div class="Best-orange-juice-flex" >
+                        <div class="margin-h"><span class="headh">Best Fresh Grapes</span></div>
+                        <p class="headp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tempora ut facere laudantium, doloremque atque repellat reiciendis temporibus nam delectus ducimus voluptas dolorem, nihil aut eos Repellat quam iste dignissimos doloremque atque Ad</p>
+                        <div><button class="buttona" ><a  class="buttona" href="">Buy Now</a></button></div>    
+                    </div>
+                    <div>
+                        <img class="img-s" id="grapes-margin" src="grapes.png" alt="">
+                    </div> 
+                </div>
+
+                <!-- Guava div starts here -->
+
+                <div class="Best-orange-juice">
+                    <div class="Best-orange-juice-flex" >
+                        <div class="margin-h"><span class="headh">Best Fresh Guava</span></div>
+                        <p class="headp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tempora ut facere laudantium, doloremque atque repellat reiciendis temporibus nam delectus ducimus voluptas dolorem, nihil aut eos Repellat quam iste dignissimos doloremque atque Ad</p>
+                        <div><button class="buttona" ><a  class="buttona" href="">Buy Now</a></button></div>    
+                    </div>
+                    <div>
+                        <img class="img-s" src="gauva.png" alt="">
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 4th page of Assignment Starts here -->
+
+    <div class="fourth-page-div">
+        <div class="lines-4" id="lines-4" >
+            <center>
+                <div>
+                    <span class="services">Testimonial</span>
+                </div>
+                <div></div>
+                <span class="services-line" >There are many variations of passages of lorem ipsum available, but the majority have</span>
+            </center>
+        </div>
+        <div>
+            <center>
+                <img src="client.png" alt="">
+                <br>
+                <span class="johnhex">Johnhex</span>
+            </center>
+        </div>
+        <!-- <div> -->
+            <center>
+                <p class="p-margin">There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form ,by injected humour
+                    <br>
+                    or randomised words which don't look even slightly believable. if you are 
+                    <br>
+                    going to use a passage of lorem ipsum, you need to be sure
+                </p>                
+            </center>
+        <!-- </div> -->
+    </div>
+
+    <!-- fifth page contact us div starts here  -->
+
+
+    <div class="contact-us-div">
+        <div class="contact-flex">
+            <div class="contact-gap" >
+                <span class="contact-line">Contact Us</span>
+                <div>
+                    <!-- <label for="Name">Name</label> -->
+                    <input id="input-size" type="text" style="text-transform: capitalize;" name="Name"  placeholder="Name">
+                </div>
+                <div>
+                    <!-- <label for="phone number">Phone Number</label> -->
+                    <input id="input-size" type="tel" name="number"  placeholder="Phone Number">
+                </div>
+                <div>
+                    <!-- <label for="email">Email</label> -->
+                    <input id="input-size" type="email" style="text-transform: lowercase;" name="email"  placeholder="Email">
+                </div>
+                <div class="message-margin" >
+                    <!-- <label for="">Message</label> -->
+                    <input class="input-message-size" id="message" type="text" name=""  placeholder="Message">
+                </div>
+                <div class="send-button-margin" >
+                    <button class="send-button" ><a  id="send-button" href="">Send</a></button>
+                </div>  
+            </div>
+            <div>
+                <img id="orange-dish" src="orange-dish.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Description page at the end  -->
+
+    <div class="description-div">
+        <div class="inside-margin">
+            <div class="all-desc">
+                <div class="fruits-dec">
+                    <div class="margin-h"><span class="headf">Fruits</span></div>
+                    <p class="desc-p">randomised words which don't look even slighty believable. if you are going to use a passage of lorem ipsum,</p>
+                </div>
+                <div class="fruits-dec">
+                    <div class="margin-h"><span class="headf">Services</span></div>
+                    <p class="desc-p">randomised words which don't look even slighty believable. if you are going to use a passage of lorem ipsum,</p>
+                </div>
+                <div class="fruits-dec">
+                    <div class="margin-h"><span class="headf">List</span></div>
+                    <p class="desc-p">randomised words which don't look even slighty believable. if you are going to use a passage of lorem ipsum,</p>
+                </div>
+                <div class="fruits-dec">
+                    <div class="margin-h"><span class="headf">Follow us</span></div>
+                    <div class="img-desc">
+                        <a href=""><img class="png-size" src="fb.png" alt=""></a>
+                        <a href=""><img class="png-size" src="twitter.png" alt=""></a>
+                        <a href=""><img class="png-size" src="linkedin.png" alt=""></a>
+                        <a href=""><img class="png-size" src="instagram.png" alt=""></a>
+                    </div>
+                    <div class="margin-h"><span class="headf">Subscribe Now</span></div>
+                    <input type="text" name="" id="subscribe-input">
+                    <div class="submargin">
+                        <button class="send-button1" ><a  id="send-button1" href="">Subscribe</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <footer>
+            <div class="copyright-margin" >
+                <center>
+                    <span  class="copyright-line">Copyright ©️ 2024 All Rights Reserved</span>
+                </center>
+            </div>
+        </footer>
+    </div>
+
+
+
+</body>
+</html>
